@@ -1,0 +1,11 @@
+<%= form_for(@task) do |t| %>
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <%= t.label :title %>
+  <%= t.text_field :title %>
+  <%= t.label :details %>
+  <%= t.text_field :details %>
+    <%= t.label :completed %>
+  <%= t.text_field :completed %>
+  <%= t.submit %>
+
+<% end %>
